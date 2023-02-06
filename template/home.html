@@ -36,6 +36,11 @@
       </nav>
       <form method="post" action="fileupload" enctype="multipart/form-data">
         {% csrf_token %}
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Default file input example</label>
+          <input class="form-control" type="file" id="formFile" name="myfiles" multiple />
+        </div>
+        
         <h3>file upload</h3>
         <button class="btn btn-primary"> Upload</button>
         <h6>
