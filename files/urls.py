@@ -19,7 +19,6 @@ from django.urls import path,include
 urlpatterns = [
     path('',include('upload.urls')),
     path('fileupload',include('upload.urls')),
-    path('scriptrun',include('upload.urls')),
     path('download',include('upload.urls')),
 
 ]
